@@ -1,0 +1,12 @@
+@mixin position($type-pos,$top-or-bottom, $left-or-right,$zIndex){
+    position: $type-pos;
+    z-index: $zIndex;
+    #{$top-or-bottom}: 0;
+    #{$left-or-right}: 0;
+}
+
+@mixin my-nav($min-height,$p-top){
+    position: relative;
+    padding-top: $p-top;
+    min-height: $min-height;
+}

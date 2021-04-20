@@ -1,0 +1,32 @@
+{
+  "name": "sass-painter",
+  "version": "1.0.0",
+  "description": "Replica del sito painter.com con l' implementazione delle nuove funzionalità di sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankyfloy/sass-painter.git"
+  },
+  "keywords": [
+    "sass",
+    "painter",
+    "painter.com",
+    "css"
+  ],
+  "author": "Francesco Sica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frankyfloy/sass-painter/issues"
+  },
+  "homepage": "https://github.com/frankyfloy/sass-painter#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.16",
+    "postcss": "^8.1.14",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.11",
+    "sass-loader": "^11.0.1"
+  }
+}
