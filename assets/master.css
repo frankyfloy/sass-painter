@@ -5,8 +5,8 @@
   padding: 0;
 }
 
-header, main, footer {
-  width: 100%;
+.mb-0 {
+  margin-bottom: 0;
 }
 
 nav.navbar {
@@ -14,7 +14,6 @@ nav.navbar {
   padding-top: 45px;
   min-height: 50px;
 }
-
 nav.navbar div.navbar-collapse ul.nav-top {
   position: absolute;
   z-index: 10;
@@ -22,11 +21,14 @@ nav.navbar div.navbar-collapse ul.nav-top {
   right: 0;
 }
 
-header {
+.cont-nav {
   background-color: black;
 }
 
-.jumbo {
+.cont-jumbo {
   background-color: green;
-  height: 500px;
+}
+
+header, main, footer {
+  width: 100%;
 }

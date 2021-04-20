@@ -1,9 +1,7 @@
 nav.navbar{
     @include my-nav(50px,45px);
-}
 
-nav.navbar{
-    div.navbar-collapse{
+    & div.navbar-collapse{
         ul.nav-top{
             @include position(absolute, top, right, 10);
         }
