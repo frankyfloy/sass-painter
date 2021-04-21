@@ -5,8 +5,80 @@
     #{$left-or-right}: 0;
 }
 
-@mixin my-nav($min-height,$p-top){
+@mixin my-nav($min-height,$p-top,$p-bot){
     position: relative;
     padding-top: $p-top;
     min-height: $min-height;
+    padding-bottom: $p-bot;
+}
+
+@mixin NavProperty{
+    @include txt-Capitalize;
+    @include my-nav(50px,45px,1rem);
+    @include mx-0;
+    @include px-0;
+}
+
+
+@mixin NavProperty{
+    @include txt-Capitalize;
+    @include my-nav(50px,45px,1rem);
+    @include mx-0;
+    @include px-0;
+}
+
+@mixin mx-0{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@mixin mb($mb){
+    margin-bottom: $mb;
+}
+
+@mixin my($m){
+    margin-top: $m;
+    margin-bottom: $m;
+}
+
+
+@mixin px-0{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@mixin px($px){
+    padding-left: $px;
+    padding-right: $px;
+}
+
+@mixin py($py){
+    padding-top: $py;
+    padding-bottom: $py;
+}
+
+@mixin txt-Uppercase{
+    text-transform: uppercase;
+}
+
+@mixin txt-Capitalize{
+    text-transform: capitalize;
+}
+
+
+
+@mixin my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@mixin mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin bg-img($url, $repeat, $size){
+    background-image: url($url);
+    background-repeat: $repeat;
+    background-size: $size;
 }

@@ -8,13 +8,19 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+        <!-- Font style -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
         <link rel="stylesheet" href="assets/master.css">
 
         <title>painter</title>
     </head>
     <body>
-
-
+        <div id="root">
             <header>
                 <div class="container-fluid cont-nav">
                     <div class="row">
@@ -26,86 +32,162 @@
                                 </button>
 
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <!-- Navbar inferior -->
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                products
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                brushes
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Wacom Tablets <span class="sr-only">Wacom Tablets</span></a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">special Offers <span class="sr-only">Special Offers</span></a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">free Trials <span class="sr-only">Free Trials</span></a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">business <span class="sr-only">Business</span></a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Support
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Learning
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </li>
+                                    </ul>
 
-                                <!-- Navbar inferior -->
-                                <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Dropdown
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
+                                    <!-- Upper nav before collapse  -->
+                                    <ul class="nav nav-top">
+                                        <li class="nav-item">
+                                            <span class="fas fa-phone-alt"></span>
+                                            <a class="nav-link active" href="#">1-877-582-6735</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <span class="fas fa-comment-alt"></span>
+                                            <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <span class="fas fa-user"></span>
+                                            <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <span class="fas fa-shopping-cart"></span>
+                                            <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                        <div class="dropdown my-dropdown">
+                                            <button class="btn btn-light dropdown-toggle pb-0 pt-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                english
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="lang dropdown-item" href="#">deutsch</a>
+                                                <a class="lang dropdown-item" href="#">français</a>
+                                                <a class="lang dropdown-item" href="#">日本人</a>
+                                                <a class="lang dropdown-item" href="#">繁體中文</a>
+                                            </div>
                                         </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link disabled" href="#">Disabled</a>
-                                    </li>
-                                </ul>
-
-                                <!-- Upper nav before collapse  -->
-                                <ul class="nav nav-top">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="#">Active</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link disabled" href="#">Disabled</a>
-                                    </li>
-                                </ul>
-                              </div>
+                                    </ul>
+                                </div>
                             </nav>
                         </div>
                     </div>
                 </div>
 
-                <div class="contaner-fluid cont-jumbo">
+                <div class="container-fluid cont-jumbo">
                     <div class="row">
                         <div class="container">
-                            <div class="jumbotron jumbotron-fluid my-jumbo mb-0">
-                                <h1 class="display-4">Hello, world!</h1>
-                                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                                <hr class="my-4">
-                                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                                <p class="lead">
-                                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                                </p>
+                            <div class="jumbotron jumbotron-fluid col-6 my-jumbo mb-0 pr-3">
+                                <h1 class="logo-jumbo mb-3"><img src="assets\img\painter-2021-wm-black.png" alt="logo_painter"> </h1>
+                                <p class="lead mb-r3"><strong>The most realistic painting experience you'll find hard to resist.</strong></p>
+
+                                <p class="lead-off mb-0"><strong>Limited-time offer</strong></p>
+                                <p class="lead-off lead-off-2">Get Signature Style Brush Pack Bundle FREE (worth $179.99)</p>
+
+                                <div class="btn-jumbo">
+                                    <a class="btn btn-black btn-lg mr-3" href="#" role="button">Learn more</a>
+                                    <a class="btn  btn-lg" href="#" role="button">download trial</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-
             </header>
-
             <main>
+                <div class="container-fluid">
+                    <section class="cards">
+                        <div class="row">
+                            <div class="header-main col-12">
+                                <h2 class="mb-0">More painting possibilities</h2>
+                            </div>
+                        </div>
 
-
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- list movie -->
+                                    <card-list
+                                        :cards = "cards">
+                                    </card-list>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </main>
-
-
-
-
-
+        </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Vue ajax/libs-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>
+
+        <!-- VUE CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+        <!-- Vuex -->
+        <script src="https://unpkg.com/vuex@2.0.0"></script>
+
+        <!-- Promise IE -->
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
+        <!-- Script js -->
+        <script src="main.js"></script>
     </body>
 </html>

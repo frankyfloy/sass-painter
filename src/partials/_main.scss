@@ -1,1 +1,36 @@
+main{
+    background-color: $lightGreyMain;
 
+    .header-main{
+        @include my(2rem);
+        text-align: center;
+    }
+
+    #cardList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+        .myCard{
+            background-color: inherit;
+            width: calc(100% / 3);
+            padding: 0 15px;
+            border: none;
+            img{
+                width: 100%;
+            }
+            .card-body{
+                background-color: $white;
+                min-height: 180px;
+
+                h5{
+                    @include my(0.8rem);
+                }
+                p{
+                    @include my(1rem);
+                }
+            }
+        }
+    }
+
+}

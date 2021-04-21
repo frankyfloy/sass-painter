@@ -9,24 +9,195 @@
   margin-bottom: 0;
 }
 
+.mb-r3 {
+  margin-bottom: 3rem;
+}
+
+.btn-black {
+  background-color: #000000;
+}
+
 nav.navbar {
+  text-transform: capitalize;
   position: relative;
   padding-top: 45px;
   min-height: 50px;
+  padding-bottom: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+nav.navbar {
+  text-transform: capitalize;
+}
+nav.navbar img.navbar-brand {
+  height: 35px;
+}
+nav.navbar div.navbar-collapse ul.navbar-nav li {
+  padding-right: 20px;
+}
+nav.navbar div.navbar-collapse ul.navbar-nav li a {
+  font-size: 0.875em;
+  padding-bottom: 0;
+  color: #ffffff;
 }
 nav.navbar div.navbar-collapse ul.nav-top {
+  height: 50px;
   position: absolute;
   z-index: 10;
   top: 0;
   right: 0;
+}
+nav.navbar div.navbar-collapse ul.nav-top li {
+  display: flex;
+  align-items: center;
+  padding-right: 12px;
+}
+nav.navbar div.navbar-collapse ul.nav-top li a {
+  display: inline-block;
+  font-size: 0.75em;
+  padding-left: 8px;
+  color: #ffffff;
+}
+nav.navbar div.navbar-collapse ul.nav-top li .fas {
+  font-size: 18px;
+  color: #009cff;
+}
+nav.navbar div.navbar-collapse ul.nav-top .my-dropdown {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+nav.navbar div.navbar-collapse ul.nav-top .my-dropdown .dropdown-menu {
+  min-width: 100%;
+}
+nav.navbar div.navbar-collapse ul.nav-top .my-dropdown .lang.dropdown-item {
+  padding: 0;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  nav.navbar {
+    display: block;
+  }
+  nav.navbar ul.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.cont-jumbo {
+  background-image: url("./img/bg-painter-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cont-jumbo .my-jumbo {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: inherit;
+}
+.cont-jumbo .my-jumbo .logo-jumbo img {
+  width: 240px;
+}
+.cont-jumbo .my-jumbo .lead-off {
+  font-style: italic;
+  color: #c70cb9;
+}
+.cont-jumbo .my-jumbo div.btn-jumbo {
+  padding-top: 2rem;
+}
+.cont-jumbo .my-jumbo div.btn-jumbo a.btn.btn-lg {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-transform: uppercase;
+  border: 2px solid #000000;
+  border-radius: 0;
+}
+.cont-jumbo .my-jumbo div.btn-jumbo a.btn:first-child {
+  color: #ffffff;
+}
+.cont-jumbo .my-jumbo div.btn-jumbo a.btn:last-child {
+  color: #000000;
 }
 
 .cont-nav {
   background-color: black;
 }
 
+main {
+  background-color: #e8e8e8;
+}
+main .header-main {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+main #cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+main #cardList .myCard {
+  background-color: inherit;
+  width: calc(100% / 3);
+  padding: 0 15px;
+  border: none;
+}
+main #cardList .myCard img {
+  width: 100%;
+}
+main #cardList .myCard .card-body {
+  background-color: #ffffff;
+  min-height: 180px;
+}
+main #cardList .myCard .card-body h5 {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+main #cardList .myCard .card-body p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .cont-jumbo {
-  background-color: green;
+  background-image: url("./img/bg-painter-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cont-jumbo .my-jumbo {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: inherit;
+}
+.cont-jumbo .my-jumbo .logo-jumbo img {
+  width: 240px;
+}
+.cont-jumbo .my-jumbo .lead-off {
+  font-style: italic;
+  color: #c70cb9;
+}
+.cont-jumbo .my-jumbo div.btn-jumbo {
+  padding-top: 2rem;
+}
+.cont-jumbo .my-jumbo div.btn-jumbo a.btn.btn-lg {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-transform: uppercase;
+  border: 2px solid #000000;
+  border-radius: 0;
+}
+.cont-jumbo .my-jumbo div.btn-jumbo a.btn:first-child {
+  color: #ffffff;
+}
+.cont-jumbo .my-jumbo div.btn-jumbo a.btn:last-child {
+  color: #000000;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 header, main, footer {
