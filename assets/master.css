@@ -116,8 +116,10 @@ nav.navbar div.navbar-collapse ul.nav-top .my-dropdown .lang.dropdown-item {
   padding: 0;
   text-align: center;
 }
+
 @media (max-width: 1200px) {
   nav.navbar {
+    min-height: 0;
     display: block;
   }
   nav.navbar ul.navbar-nav {
@@ -125,7 +127,38 @@ nav.navbar div.navbar-collapse ul.nav-top .my-dropdown .lang.dropdown-item {
     margin-right: auto;
   }
 }
-
+@media (max-width: 992px) {
+  div.container {
+    max-width: 100%;
+    padding: 0.5rem 1rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  div.container .navbar-toggler {
+    float: left;
+  }
+  div.container nav.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  div.container nav.navbar div.navbar-collapse {
+    width: 100%;
+    text-align: left;
+  }
+  div.container nav.navbar div.navbar-collapse ul.navbar-nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+  }
+  div.container nav.navbar div.navbar-collapse ul.nav-top {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    display: contents;
+  }
+}
 .cont-jumbo {
   background-image: url("./img/bg-painter-home.jpg");
   background-repeat: no-repeat;
@@ -219,6 +252,7 @@ main section.cards2 #cardList .myCard {
   flex-flow: row;
   border: none;
   border-radius: 0;
+  height: 300px;
 }
 main section.cards2 #cardList .myCard img {
   width: 50%;
@@ -245,6 +279,19 @@ main section.cards2 #cardList .myCard .myCard-body a {
 main section.cards2 #cardList .myCard .myCard-body a:hover {
   opacity: 0.8;
 }
+main section.cards2 #cardList .myCard:first-child {
+  background-image: url("img\\wacom-painter.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: right;
+  background-position-y: top;
+}
+main section.cards2 #cardList .myCard:first-child img {
+  margin-top: 20px;
+  padding-right: auto;
+  width: 40%;
+  height: 90%;
+}
 main section.cards2 #cardList .myCard:nth-child(odd) .myCard-body {
   order: 0;
 }
@@ -253,6 +300,7 @@ main section.cards2 #cardList .myCard:nth-child(odd) img {
 }
 
 footer {
+  overflow-x: hidden;
   text-transform: capitalize;
 }
 footer section.link {

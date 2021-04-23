@@ -140,7 +140,6 @@ var app = new Vue({
             {
                 title: 'Wacom + Painter 2021',
                 description:'Satisfy all your digital painting needs with the power and precision of these award-winning bundles.',
-                background:'assets\\img\\wacom-painter.jpg',
                 img:'assets\\img\\wacom.png',
                 backgroundBody: 'purple'
             },

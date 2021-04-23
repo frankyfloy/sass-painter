@@ -9,8 +9,6 @@ nav.navbar{
     }
 
     & div.navbar-collapse{
-
-
         ul.navbar-nav{
             li{
                 padding-right: 20px;
@@ -56,13 +54,46 @@ nav.navbar{
             }
         }
     }
+}
 
-    @media (max-width: $layout-breakpoint-small) {
+@media (max-width: $layout-breakpoint-small) {
+    nav.navbar{
+        min-height: 0;
         display: block;
+        ul.navbar-nav{
+            @include mx-auto;
+        }
+    }
+}
 
-        &{
+@media (max-width: $layout-breakpoint-toggle) {
+
+    div.container{
+        max-width: 100%;
+        padding: .5rem 1rem;
+        @include mx(0);
+        .navbar-toggler{
+            float: left;
+        }
+        nav.navbar {
+            @include py(0);
+            text-align: center;
+        }
+
+        nav.navbar div.navbar-collapse{
+            width: 100%;
+            text-align: left;
+
             ul.navbar-nav{
-                @include mx-auto;
+                @include my(20px);
+                width: 100%;
+                text-align: left;
+            }
+
+            ul.nav-top{
+                @include my(20px);
+                position: relative;
+                display: contents;
             }
         }
     }

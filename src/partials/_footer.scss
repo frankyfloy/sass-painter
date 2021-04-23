@@ -1,4 +1,5 @@
 footer{
+    overflow-x: hidden;
     @include txt-Capitalize;
     section.link{
 
@@ -87,6 +88,5 @@ footer{
                 }
             }
         }
-
     }
 }

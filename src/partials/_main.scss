@@ -1,7 +1,5 @@
 main{
     background-color: $lightGreyMain;
-
-
     .container{
         @include px(0);
     }
@@ -53,6 +51,8 @@ main{
                 flex-flow: row;
                 border: none;
                 border-radius: 0;
+                height: 300px;
+
                 img{
                     width: 50%;
                     border: none;
@@ -79,6 +79,19 @@ main{
                 }
             }
 
+            .myCard:first-child{
+                img{
+                    margin-top: 20px;
+                    padding-right: auto;
+                    width: 40%;
+                    height: 90%;
+                }
+                background-image: url('img\\wacom-painter.jpg');
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position-x: right;
+                background-position-y: top;
+            }
             .myCard:nth-child(odd){
                 .myCard-body{
                     order: 0;

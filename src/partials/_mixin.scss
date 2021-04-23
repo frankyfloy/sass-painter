@@ -19,7 +19,6 @@
     @include px-0;
 }
 
-
 @mixin NavProperty{
     @include txt-Capitalize;
     @include my-nav(50px,45px,1rem);
@@ -39,6 +38,11 @@
 @mixin my($m){
     margin-top: $m;
     margin-bottom: $m;
+}
+
+@mixin mx($m){
+    margin-left: $m;
+    margin-right: $m;
 }
 
 
