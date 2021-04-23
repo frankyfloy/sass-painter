@@ -111,7 +111,6 @@ var app = new Vue({
                 description:'Diverse add-on packs to embellish photo composites, graphic designs and paintings'
             }
         ],
-
         cards2:[
             {
                 title: 'Wacom + Painter 2021',
@@ -136,8 +135,7 @@ var app = new Vue({
 
             }
         ],
-
-        list: [
+        lists: [
             {
                 name:'products',
                 items: [
@@ -187,6 +185,5 @@ var app = new Vue({
                 ]
             },
         ]
-
     },
 })

@@ -178,22 +178,9 @@
             <footer>
                 <section class="link">
                     <div class="container">
-                        <list-group
-                            :list = "list[0]">
+                        <list-group v-for="(list,i) in lists"
+                            :list = "lists[i]">
                         </list-group>
-
-                        <list-group
-                            :list = "list[1]">
-                        </list-group>
-
-                        <list-group
-                            :list = "list[2]">
-                        </list-group>
-
-                        <list-group
-                            :list = "list[3]">
-                        </list-group>
-
                     </div>
                 </section>
 
