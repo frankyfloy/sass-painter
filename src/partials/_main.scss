@@ -53,12 +53,22 @@ main{
                 }
                 .myCard-body{
                     width: 50%;
-                    background-color: $white;
+                    color: $white;
                     h5{
                         @include my(0.8rem);
                     }
                     p{
                         @include my(1rem);
+                    }
+                    a{
+                        padding: 10px 25px;
+                        font-size: 20px;
+                        color: $black;
+                        background-color: $white;
+
+                        &:hover{
+                            opacity: 0.8;
+                        }
                     }
                 }
             }

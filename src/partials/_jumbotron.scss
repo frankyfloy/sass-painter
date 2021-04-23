@@ -26,6 +26,9 @@
                 border: 2px solid $black;
                 border-radius: 0;
             }
+            a:hover{
+                opacity: 0.8;
+            }
             a.btn:first-child{
                 color: $white;
             }

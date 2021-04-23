@@ -5,6 +5,18 @@
   padding: 0;
 }
 
+.purple {
+  background-color: #3c1567;
+}
+
+.blue {
+  background-color: #0072bc;
+}
+
+.grey {
+  background-color: #3c3c3c;
+}
+
 .mb-0 {
   margin-bottom: 0;
 }
@@ -114,6 +126,9 @@ nav.navbar div.navbar-collapse ul.nav-top .my-dropdown .lang.dropdown-item {
   border: 2px solid #000000;
   border-radius: 0;
 }
+.cont-jumbo .my-jumbo div.btn-jumbo a:hover {
+  opacity: 0.8;
+}
 .cont-jumbo .my-jumbo div.btn-jumbo a.btn:first-child {
   color: #ffffff;
 }
@@ -177,7 +192,7 @@ main section.cards2 #cardList .myCard img {
 }
 main section.cards2 #cardList .myCard .myCard-body {
   width: 50%;
-  background-color: #ffffff;
+  color: #ffffff;
 }
 main section.cards2 #cardList .myCard .myCard-body h5 {
   margin-top: 0.8rem;
@@ -187,11 +202,37 @@ main section.cards2 #cardList .myCard .myCard-body p {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+main section.cards2 #cardList .myCard .myCard-body a {
+  padding: 10px 25px;
+  font-size: 20px;
+  color: #000000;
+  background-color: #ffffff;
+}
+main section.cards2 #cardList .myCard .myCard-body a:hover {
+  opacity: 0.8;
+}
 main section.cards2 #cardList .myCard:nth-child(odd) .myCard-body {
   order: 0;
 }
 main section.cards2 #cardList .myCard:nth-child(odd) img {
   order: 1;
+}
+
+footer {
+  height: 50vh;
+  background-color: green;
+}
+footer section.link div.container {
+  display: flex;
+  justify-content: space-between;
+}
+footer section.link div.container ul.list-group li.list-group-item {
+  border: none;
+  font-size: 12px;
+}
+footer section.link div.container ul.list-group li.list-group-item:first-child {
+  color: green;
+  font-size: 18px;
 }
 
 .cont-jumbo {
@@ -222,11 +263,18 @@ main section.cards2 #cardList .myCard:nth-child(odd) img {
   border: 2px solid #000000;
   border-radius: 0;
 }
+.cont-jumbo .my-jumbo div.btn-jumbo a:hover {
+  opacity: 0.8;
+}
 .cont-jumbo .my-jumbo div.btn-jumbo a.btn:first-child {
   color: #ffffff;
 }
 .cont-jumbo .my-jumbo div.btn-jumbo a.btn:last-child {
   color: #000000;
+}
+
+* {
+  outline: none;
 }
 
 body {
