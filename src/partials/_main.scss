@@ -40,8 +40,7 @@ main{
         }
     }
 
-
-    // Alternate order of fflex elements within the second card section
+    // Alternate order of flex elements within the second card section
     section.cards2{
         margin-top: 50px;
 
@@ -53,17 +52,19 @@ main{
                 display: flex;
                 flex-flow: row;
                 border: none;
+                border-radius: 0;
                 img{
                     width: 50%;
+                    border: none;
                 }
                 .myCard-body{
                     width: 50%;
                     color: $white;
                     h5{
-                        @include my(0.8rem);
+                        @include my(2rem);
                     }
                     p{
-                        @include my(1rem);
+                        @include my(2rem);
                     }
                     a{
                         padding: 10px 25px;

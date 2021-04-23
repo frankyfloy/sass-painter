@@ -1,6 +1,7 @@
 footer{
     @include txt-Capitalize;
     section.link{
+
         background-color: $lightGreyFoot;
         div.container.lists{
             display: flex;
@@ -25,24 +26,63 @@ footer{
                 }
             }
         }
+        .row{
+            div.container.icon{
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 20px;
 
-        div.container.icon{
-            display: flex;
-            justify-content: flex-end;
-
-            ul.list-group{
-                flex-direction: row;
-                padding-right: 10px;
-                li{
-                    background-color: inherit;
-                    border: none;
-                    padding: 0;
-                    .fab, .fas, .far{
-                        padding: 5px;
-                        font-size: 35px;
+                ul.list-group{
+                    flex-direction: row;
+                    padding-right: 10px;
+                    li{
+                        background-color: inherit;
+                        border: none;
+                        padding: 0;
+                        .fab, .fas, .far{
+                            padding: 5px;
+                            font-size: 35px;
+                        }
                     }
                 }
             }
         }
+    }
+
+    section.termsAndConditions{
+        height: 100px;
+        background-color: $grey;
+        display: flex;
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+
+            .logo-partner{
+                padding-right: 50px;
+                display: flex;
+                align-items: center;
+
+                img{
+                    height: 50px;
+                    padding-right: 20px;
+                }
+            }
+
+            div.Copyright{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-size: 12px;
+                a{
+                    padding-right: 15px;
+                    color: #999;
+                }
+                nobr{
+                    color: $white;
+                }
+            }
+        }
+
     }
 }

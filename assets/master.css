@@ -218,21 +218,23 @@ main section.cards2 #cardList .myCard {
   display: flex;
   flex-flow: row;
   border: none;
+  border-radius: 0;
 }
 main section.cards2 #cardList .myCard img {
   width: 50%;
+  border: none;
 }
 main section.cards2 #cardList .myCard .myCard-body {
   width: 50%;
   color: #ffffff;
 }
 main section.cards2 #cardList .myCard .myCard-body h5 {
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 main section.cards2 #cardList .myCard .myCard-body p {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 main section.cards2 #cardList .myCard .myCard-body a {
   padding: 10px 25px;
@@ -277,22 +279,54 @@ footer section.link div.container.lists ul.list-group li.list-group-item {
 footer section.link div.container.lists ul.list-group li.list-group-item a {
   color: #000000;
 }
-footer section.link div.container.icon {
+footer section.link .row div.container.icon {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 20px;
 }
-footer section.link div.container.icon ul.list-group {
+footer section.link .row div.container.icon ul.list-group {
   flex-direction: row;
   padding-right: 10px;
 }
-footer section.link div.container.icon ul.list-group li {
+footer section.link .row div.container.icon ul.list-group li {
   background-color: inherit;
   border: none;
   padding: 0;
 }
-footer section.link div.container.icon ul.list-group li .fab, footer section.link div.container.icon ul.list-group li .fas, footer section.link div.container.icon ul.list-group li .far {
+footer section.link .row div.container.icon ul.list-group li .fab, footer section.link .row div.container.icon ul.list-group li .fas, footer section.link .row div.container.icon ul.list-group li .far {
   padding: 5px;
   font-size: 35px;
+}
+footer section.termsAndConditions {
+  height: 100px;
+  background-color: #1e1e1e;
+  display: flex;
+}
+footer section.termsAndConditions .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer section.termsAndConditions .container .logo-partner {
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+}
+footer section.termsAndConditions .container .logo-partner img {
+  height: 50px;
+  padding-right: 20px;
+}
+footer section.termsAndConditions .container div.Copyright {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 12px;
+}
+footer section.termsAndConditions .container div.Copyright a {
+  padding-right: 15px;
+  color: #999;
+}
+footer section.termsAndConditions .container div.Copyright nobr {
+  color: #ffffff;
 }
 
 .cont-jumbo {

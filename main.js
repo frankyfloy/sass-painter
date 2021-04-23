@@ -229,4 +229,10 @@ var app = new Vue({
 
         ]
     },
+
+    computed:{
+        getYear(){
+            return moment().format('YYYY');
+        }
+    }
 })
