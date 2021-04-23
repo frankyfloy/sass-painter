@@ -28,6 +28,7 @@ Vue.component("single-card", {
                 <a href="#" class="card-link">Learn more</a>
             </div>
         </div>
+
     </div>
     `
 })
@@ -98,8 +99,8 @@ Vue.component("simple-list", {
     <ul class="list-group">
         <li
             v-for="(icon,i) in list"
-            :key= "i"
-            :class="'icon' + (i + 1)"
+            :key= "'icon' + i"
+            :class="'icon' + i"
             class="list-group-item">
                 <a
                     :class="icon.name"

@@ -53,6 +53,10 @@
   background-color: #000000;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 nav.navbar {
   text-transform: capitalize;
   position: relative;
@@ -166,6 +170,10 @@ nav.navbar div.navbar-collapse ul.nav-top .my-dropdown .lang.dropdown-item {
 
 main {
   background-color: #e8e8e8;
+}
+main .container {
+  padding-left: 0;
+  padding-right: 0;
 }
 main .header-main {
   margin-top: 2rem;
@@ -335,4 +343,8 @@ body {
 
 header, main, footer {
   width: 100%;
+}
+
+.row {
+  margin: 0;
 }

@@ -1,6 +1,10 @@
 main{
     background-color: $lightGreyMain;
 
+
+    .container{
+        @include px(0);
+    }
     .header-main{
         @include my(2rem);
         text-align: center;
@@ -17,6 +21,7 @@ main{
                 width: calc(100% / 3);
                 padding: 0 15px;
                 border: none;
+
                 img{
                     width: 100%;
                 }
