@@ -1,3 +1,27 @@
+.cl-face {
+  color: #3b5998;
+}
+
+.cl-insta {
+  color: #3f729b;
+}
+
+.cl-twitter {
+  color: #00acee;
+}
+
+.cl-youTb {
+  color: #c4302b;
+}
+
+.cl-pintst {
+  color: #c8232c;
+}
+
+.cl-painter {
+  color: #ff8d00;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -219,20 +243,48 @@ main section.cards2 #cardList .myCard:nth-child(odd) img {
 }
 
 footer {
-  height: 50vh;
-  background-color: green;
+  text-transform: capitalize;
 }
-footer section.link div.container {
+footer section.link {
+  background-color: #ececec;
+}
+footer section.link div.container.lists {
   display: flex;
   justify-content: space-between;
 }
-footer section.link div.container ul.list-group li.list-group-item {
-  border: none;
-  font-size: 12px;
+footer section.link div.container.lists ul.list-group {
+  height: 250px;
+  margin-top: 50px;
 }
-footer section.link div.container ul.list-group li.list-group-item:first-child {
-  color: green;
-  font-size: 18px;
+footer section.link div.container.lists ul.list-group li.list-group-item:first-child {
+  font-size: 16px;
+}
+footer section.link div.container.lists ul.list-group li.list-group-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  border: none;
+  background-color: inherit;
+}
+footer section.link div.container.lists ul.list-group li.list-group-item a {
+  color: #000000;
+}
+footer section.link div.container.icon {
+  display: flex;
+  justify-content: flex-end;
+}
+footer section.link div.container.icon ul.list-group {
+  flex-direction: row;
+  padding-right: 10px;
+}
+footer section.link div.container.icon ul.list-group li {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+}
+footer section.link div.container.icon ul.list-group li .fab, footer section.link div.container.icon ul.list-group li .fas, footer section.link div.container.icon ul.list-group li .far {
+  padding: 5px;
+  font-size: 35px;
 }
 
 .cont-jumbo {

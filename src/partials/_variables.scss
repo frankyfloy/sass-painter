@@ -1,5 +1,7 @@
 $w_100: 100%;
 
+$fontSize : 14px;
+
 // Color
 $white: #ffffff;
 
@@ -9,10 +11,30 @@ $black: #000000;
 
 $lightGreyMain: #e8e8e8;
 
+$lightGreyFoot: #ececec;
+
 $fasColor: #009cff;
 
+// icon-color
+.cl-face{
+    color: #3b5998;
+}
+.cl-insta{
+    color: #3f729b;
+}
+.cl-twitter{
+    color: #00acee;
+}
+.cl-youTb{
+    color: #c4302b;
+}
 
-$fontSize : 14px;
+.cl-pintst{
+    color: #c8232c;
+}
+.cl-painter{
+    color: #ff8d00;
+}
 
 // Media query breakpoints
 $layout-breakpoint-small: 1200px;

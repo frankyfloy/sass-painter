@@ -55,9 +55,7 @@ Vue.component("card-list", {
     `
 })
 
-
-
-
+// List-group
 Vue.component("list-group", {
     props: {
         list: {
@@ -78,8 +76,34 @@ Vue.component("list-group", {
             :class="'li' + (i + 1)"
             class="list-group-item">
 
-                <a href="li.link">
+                <a
+                    :href="li.link">
                     {{ li.text }}
+                </a>
+        </li>
+    </ul>
+    `
+})
+
+// simple list
+Vue.component("simple-list", {
+    props: {
+        list: {
+            type: Array,
+            required: true,
+        },
+    },
+
+    template: `
+    <ul class="list-group">
+        <li
+            v-for="(icon,i) in list"
+            :key= "i"
+            :class="'icon' + (i + 1)"
+            class="list-group-item">
+                <a
+                    :class="icon.name"
+                    :href="icon.link">
                 </a>
         </li>
     </ul>
@@ -147,7 +171,6 @@ var app = new Vue({
                     {text:'All products', link:''}
                 ]
             },
-
             {
                 name:'quick links',
                 items: [
@@ -159,7 +182,6 @@ var app = new Vue({
                     {text:'Beta Programs', link:''}
                 ]
             },
-
             {
                 name:'support',
                 items: [
@@ -171,7 +193,6 @@ var app = new Vue({
                     {text:'Contact us', link:''}
                 ]
             },
-
             {
                 name:'about corel',
                 items: [
@@ -184,6 +205,27 @@ var app = new Vue({
                     {text:'EULA', link:''}
                 ]
             },
+        ],
+        icons:[
+            {
+                name: 'fab fa-facebook-square cl-face', link: 'https://www.facebook.com/'
+            },
+            {
+                name: 'fab fa-instagram-square cl-insta', link: 'https://www.instagram.com/'
+            },
+            {
+                name: 'fab fa-twitter-square cl-twitter', link: 'https://twitter.com/'
+            },
+            {
+                name: 'fab fa-youtube-square cl-youTb', link: 'https://www.youtube.com/'
+            },
+            {
+                name: 'fab fa-pinterest-square cl-pintst', link: 'https://www.pinterest.com/'
+            },
+            {
+                name: 'fas fa-rss-square cl-painter', link: 'https://www.painte rartist.com/'
+            },
+
         ]
     },
 })

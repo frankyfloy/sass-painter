@@ -1,21 +1,46 @@
 footer{
-    height: 50vh;
-    background-color: green;
-
+    @include txt-Capitalize;
     section.link{
-        div.container{
+        background-color: $lightGreyFoot;
+        div.container.lists{
             display: flex;
             justify-content: space-between;
 
             ul.list-group{
-                li.list-group-item{
-                    border: none;
-                    font-size: 12px;
-                }
+                height: 250px;
+                margin-top: 50px;
 
                 li.list-group-item:first-child{
-                    color: green;
-                    font-size: 18px;
+                    font-size: 16px;
+                }
+
+                li.list-group-item{
+                    @include py(5px);
+                    font-size: 12px;
+                    border: none;
+                    background-color: inherit;
+                    a{
+                        color: $black;
+                    }
+                }
+            }
+        }
+
+        div.container.icon{
+            display: flex;
+            justify-content: flex-end;
+
+            ul.list-group{
+                flex-direction: row;
+                padding-right: 10px;
+                li{
+                    background-color: inherit;
+                    border: none;
+                    padding: 0;
+                    .fab, .fas, .far{
+                        padding: 5px;
+                        font-size: 35px;
+                    }
                 }
             }
         }
