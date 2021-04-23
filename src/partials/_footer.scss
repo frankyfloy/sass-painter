@@ -89,4 +89,28 @@ footer{
             }
         }
     }
+    @media (max-width: 800px) {
+        section.link div.container.lists {
+            flex-direction: column;
+            ul.list-group {
+                margin-top: 0px;
+            }
+        }
+
+        section.termsAndConditions{
+            .container{
+                flex-direction: column;
+                .logo-partner{
+                    img{
+                        padding-bottom: 15px;
+                    }
+                }
+                //
+                div.Copyright{
+                    display: block;
+                }
+            }
+
+        }
+    }
 }

@@ -8,9 +8,12 @@
         background-color: inherit;
 
         .logo-jumbo {
-            img{
-                width: 240px;
-            }
+            height: 80px;
+            width: 200px;
+            display: inline-block;
+            background-image: url('img/painter-2021-wm-black.png');
+            background-repeat: no-repeat;
+            background-size: contain;
         }
 
         .lead-off{
@@ -23,7 +26,7 @@
             a.btn.btn-lg{
                 @include px(2rem);
                 @include txt-Uppercase;
-                border: 2px solid $black;
+                border: 1px solid $black;
                 border-radius: 0;
             }
             a:hover{
@@ -31,10 +34,68 @@
             }
             a.btn:first-child{
                 color: $white;
+                margin-right: 8px;
             }
 
             a.btn:last-child{
                 color: $black;
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+
+        &{
+            @include bg-img('./img/bg-painter-small1.jpg',no-repeat,cover);
+            filter: blur(0.3px);
+            color: $white;
+
+            .my-jumbo{
+                text-shadow: 2px 2px 4px #000000;
+                z-index: 1;
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                
+                div.btn-jumbo{
+                    a.btn:first-child{
+                        background-color: $white;
+                        color: $black;
+                    }
+
+                    a.btn:last-child{
+                        display: none;
+                    }
+                }
+
+                .logo-jumbo {
+                    text-align: center;
+                    background-image: url('img/logo_painter.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+                .lead-off{
+                    order: 2;
+
+                    font-style: italic;
+                    color: $white;
+                    font-size: 80%;
+                }
+
+                .btn-jumbo{
+                    order: 1;
+
+                    margin-bottom: 20px;
+                    margin-right: 0;
+                    text-shadow: none;
+
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
             }
         }
     }

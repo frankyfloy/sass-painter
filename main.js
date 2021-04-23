@@ -1,5 +1,6 @@
 Vue.config.devtools = true;
 
+
 // single card
 Vue.component("single-card", {
 
@@ -10,25 +11,20 @@ Vue.component("single-card", {
         },
     },
 
-    methods: {
-    },
-
     template: `
     <div class="card myCard">
-
-        <img class="card-img-top" :src="card.img">
+        <div class="cont-img">
+            <img class="card-img-top" :src="card.img">
+        </div>
 
         <div
             :class= "card.backgroundBody"
-            class="myCard-body">
+            class="myCard-body card-body">
 
-            <div class="card-body">
-                <h5 class="card-title"> <strong>{{ card.title }}</strong> </h5>
-                <p class="card-text"> {{ card.description }} </p>
-                <a href="#" class="card-link">Learn more</a>
-            </div>
+            <h5 class="card-title"> <strong>{{ card.title }}</strong> </h5>
+            <p class="card-text"> {{ card.description }} </p>
+            <a href="#" class="card-link">Learn more</a>
         </div>
-
     </div>
     `
 })
@@ -225,13 +221,12 @@ var app = new Vue({
             {
                 name: 'fas fa-rss-square cl-painter', link: 'https://www.painte rartist.com/'
             },
-
         ]
     },
-
     computed:{
         getYear(){
             return moment().format('YYYY');
-        }
-    }
+        },
+    },
+
 })

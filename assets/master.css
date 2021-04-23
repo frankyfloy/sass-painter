@@ -78,8 +78,9 @@ nav.navbar div.navbar-collapse ul.navbar-nav li {
   padding-right: 20px;
 }
 nav.navbar div.navbar-collapse ul.navbar-nav li a {
-  font-size: 0.875em;
   padding-bottom: 0;
+  font-size: 0.875em;
+  line-height: 2rem;
   color: #ffffff;
 }
 nav.navbar div.navbar-collapse ul.nav-top {
@@ -93,6 +94,7 @@ nav.navbar div.navbar-collapse ul.nav-top li {
   display: flex;
   align-items: center;
   padding-right: 12px;
+  line-height: 30px;
 }
 nav.navbar div.navbar-collapse ul.nav-top li a {
   display: inline-block;
@@ -130,9 +132,12 @@ nav.navbar div.navbar-collapse ul.nav-top .my-dropdown .lang.dropdown-item {
 @media (max-width: 992px) {
   div.container {
     max-width: 100%;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1rem;
     margin-left: 0;
     margin-right: 0;
+  }
+  div.container .navbar-brand {
+    margin-right: 4rem;
   }
   div.container .navbar-toggler {
     float: left;
@@ -170,8 +175,13 @@ nav.navbar div.navbar-collapse ul.nav-top .my-dropdown .lang.dropdown-item {
   padding-bottom: 6rem;
   background-color: inherit;
 }
-.cont-jumbo .my-jumbo .logo-jumbo img {
-  width: 240px;
+.cont-jumbo .my-jumbo .logo-jumbo {
+  height: 80px;
+  width: 200px;
+  display: inline-block;
+  background-image: url("img/painter-2021-wm-black.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cont-jumbo .my-jumbo .lead-off {
   font-style: italic;
@@ -184,7 +194,7 @@ nav.navbar div.navbar-collapse ul.nav-top .my-dropdown .lang.dropdown-item {
   padding-left: 2rem;
   padding-right: 2rem;
   text-transform: uppercase;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   border-radius: 0;
 }
 .cont-jumbo .my-jumbo div.btn-jumbo a:hover {
@@ -192,9 +202,56 @@ nav.navbar div.navbar-collapse ul.nav-top .my-dropdown .lang.dropdown-item {
 }
 .cont-jumbo .my-jumbo div.btn-jumbo a.btn:first-child {
   color: #ffffff;
+  margin-right: 8px;
 }
 .cont-jumbo .my-jumbo div.btn-jumbo a.btn:last-child {
   color: #000000;
+}
+@media (max-width: 800px) {
+  .cont-jumbo {
+    background-image: url("./img/bg-painter-small1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(0.3px);
+    color: #ffffff;
+  }
+  .cont-jumbo .my-jumbo {
+    text-shadow: 2px 2px 4px #000000;
+    z-index: 1;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .cont-jumbo .my-jumbo div.btn-jumbo a.btn:first-child {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .cont-jumbo .my-jumbo div.btn-jumbo a.btn:last-child {
+    display: none;
+  }
+  .cont-jumbo .my-jumbo .logo-jumbo {
+    text-align: center;
+    background-image: url("img/logo_painter.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .cont-jumbo .my-jumbo .lead-off {
+    order: 2;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 80%;
+  }
+  .cont-jumbo .my-jumbo .btn-jumbo {
+    order: 1;
+    margin-bottom: 20px;
+    margin-right: 0;
+    text-shadow: none;
+  }
+  .cont-jumbo .my-jumbo .btn-jumbo:hover {
+    opacity: 0.8;
+  }
 }
 
 .cont-nav {
@@ -225,9 +282,6 @@ main section.cards #cardList .myCard {
   padding: 0 15px;
   border: none;
 }
-main section.cards #cardList .myCard img {
-  width: 100%;
-}
 main section.cards #cardList .myCard .card-body {
   background-color: #ffffff;
   min-height: 180px;
@@ -250,16 +304,22 @@ main section.cards2 #cardList {
 main section.cards2 #cardList .myCard {
   display: flex;
   flex-flow: row;
+  flex-wrap: wrap;
   border: none;
   border-radius: 0;
+}
+main section.cards2 #cardList .myCard .cont-img {
+  width: 50%;
   height: 300px;
 }
-main section.cards2 #cardList .myCard img {
-  width: 50%;
+main section.cards2 #cardList .myCard .cont-img img {
+  width: 100%;
+  height: 100%;
   border: none;
 }
 main section.cards2 #cardList .myCard .myCard-body {
   width: 50%;
+  height: 300px;
   color: #ffffff;
 }
 main section.cards2 #cardList .myCard .myCard-body h5 {
@@ -282,21 +342,46 @@ main section.cards2 #cardList .myCard .myCard-body a:hover {
 main section.cards2 #cardList .myCard:first-child {
   background-image: url("img\\wacom-painter.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
-  background-position-x: right;
-  background-position-y: top;
+  background-size: cover;
 }
 main section.cards2 #cardList .myCard:first-child img {
   margin-top: 20px;
-  padding-right: auto;
-  width: 40%;
+  width: 80%;
+  min-width: 200px;
   height: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 main section.cards2 #cardList .myCard:nth-child(odd) .myCard-body {
   order: 0;
 }
-main section.cards2 #cardList .myCard:nth-child(odd) img {
+main section.cards2 #cardList .myCard:nth-child(odd) .cont-img img {
   order: 1;
+}
+@media (max-width: 800px) {
+  main section.cards #cardList .myCard {
+    width: 100%;
+  }
+  main section.cards2 #cardList .myCard {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  main section.cards2 #cardList .myCard .cont-img img {
+    width: 200%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main section.cards2 #cardList .myCard .myCard-body {
+    width: 100%;
+    height: 300px;
+  }
+  main section.cards2 #cardList .myCard:first-child img {
+    margin-top: 0;
+    -o-object-fit: contain;
+       object-fit: contain;
+    min-width: 200px;
+    max-height: 202px;
+  }
 }
 
 footer {
@@ -380,6 +465,23 @@ footer section.termsAndConditions .container div.Copyright a {
 footer section.termsAndConditions .container div.Copyright nobr {
   color: #ffffff;
 }
+@media (max-width: 800px) {
+  footer section.link div.container.lists {
+    flex-direction: column;
+  }
+  footer section.link div.container.lists ul.list-group {
+    margin-top: 0px;
+  }
+  footer section.termsAndConditions .container {
+    flex-direction: column;
+  }
+  footer section.termsAndConditions .container .logo-partner img {
+    padding-bottom: 15px;
+  }
+  footer section.termsAndConditions .container div.Copyright {
+    display: block;
+  }
+}
 
 .cont-jumbo {
   background-image: url("./img/bg-painter-home.jpg");
@@ -392,8 +494,13 @@ footer section.termsAndConditions .container div.Copyright nobr {
   padding-bottom: 6rem;
   background-color: inherit;
 }
-.cont-jumbo .my-jumbo .logo-jumbo img {
-  width: 240px;
+.cont-jumbo .my-jumbo .logo-jumbo {
+  height: 80px;
+  width: 200px;
+  display: inline-block;
+  background-image: url("img/painter-2021-wm-black.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cont-jumbo .my-jumbo .lead-off {
   font-style: italic;
@@ -406,7 +513,7 @@ footer section.termsAndConditions .container div.Copyright nobr {
   padding-left: 2rem;
   padding-right: 2rem;
   text-transform: uppercase;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   border-radius: 0;
 }
 .cont-jumbo .my-jumbo div.btn-jumbo a:hover {
@@ -414,9 +521,56 @@ footer section.termsAndConditions .container div.Copyright nobr {
 }
 .cont-jumbo .my-jumbo div.btn-jumbo a.btn:first-child {
   color: #ffffff;
+  margin-right: 8px;
 }
 .cont-jumbo .my-jumbo div.btn-jumbo a.btn:last-child {
   color: #000000;
+}
+@media (max-width: 800px) {
+  .cont-jumbo {
+    background-image: url("./img/bg-painter-small1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(0.3px);
+    color: #ffffff;
+  }
+  .cont-jumbo .my-jumbo {
+    text-shadow: 2px 2px 4px #000000;
+    z-index: 1;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .cont-jumbo .my-jumbo div.btn-jumbo a.btn:first-child {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .cont-jumbo .my-jumbo div.btn-jumbo a.btn:last-child {
+    display: none;
+  }
+  .cont-jumbo .my-jumbo .logo-jumbo {
+    text-align: center;
+    background-image: url("img/logo_painter.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .cont-jumbo .my-jumbo .lead-off {
+    order: 2;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 80%;
+  }
+  .cont-jumbo .my-jumbo .btn-jumbo {
+    order: 1;
+    margin-bottom: 20px;
+    margin-right: 0;
+    text-shadow: none;
+  }
+  .cont-jumbo .my-jumbo .btn-jumbo:hover {
+    opacity: 0.8;
+  }
 }
 
 * {
@@ -425,6 +579,7 @@ footer section.termsAndConditions .container div.Copyright nobr {
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #e8e8e8;
 }
 
 header, main, footer {
