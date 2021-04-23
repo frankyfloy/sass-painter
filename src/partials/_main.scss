@@ -6,31 +6,71 @@ main{
         text-align: center;
     }
 
-    #cardList{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 0;
-        .myCard{
-            background-color: inherit;
-            width: calc(100% / 3);
-            padding: 0 15px;
-            border: none;
-            img{
-                width: 100%;
-            }
-            .card-body{
-                background-color: $white;
-                min-height: 180px;
-
-                h5{
-                    @include my(0.8rem);
+    section.cards{
+        #cardList{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0;
+            .myCard{
+                background-color: inherit;
+                width: calc(100% / 3);
+                padding: 0 15px;
+                border: none;
+                img{
+                    width: 100%;
                 }
-                p{
-                    @include my(1rem);
+                .card-body{
+                    background-color: $white;
+                    min-height: 180px;
+
+                    h5{
+                        @include my(0.8rem);
+                    }
+                    p{
+                        @include my(1rem);
+                    }
                 }
             }
         }
     }
 
+
+    // Alternate order of fflex elements within the second card section
+    section.cards2{
+        margin-top: 50px;
+
+        #cardList{
+            display: flex;
+            flex-wrap: wrap;
+
+            .myCard{
+                display: flex;
+                flex-flow: row;
+                border: none;
+                img{
+                    width: 50%;
+                }
+                .myCard-body{
+                    width: 50%;
+                    background-color: $white;
+                    h5{
+                        @include my(0.8rem);
+                    }
+                    p{
+                        @include my(1rem);
+                    }
+                }
+            }
+
+            .myCard:nth-child(odd){
+                .myCard-body{
+                    order: 0;
+                }
+                img{
+                    order: 1;
+                }
+            }
+        }
+    }
 }

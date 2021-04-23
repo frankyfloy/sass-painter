@@ -76,6 +76,26 @@ var app = new Vue({
                 title: 'Brush Packs',
                 description:'Diverse add-on packs to embellish photo composites, graphic designs and paintings'
             }
+        ],
+
+        cards2:[
+            {
+                img:'assets\\img\\ptr-module.jpg',
+                title: 'Painter Essentials 8',
+                description:'The best affordable painting software for beginners'
+            },
+
+            {
+                img:'assets\\img\\particleshop-module.jpg',
+                title: 'Particle Shop',
+                description:'Powerful Adobe® Photoshop® brush plugin powered by Painter'
+            },
+
+            {
+                img:'assets\\img\\brush-pack-module.jpg',
+                title: 'Brush Packs',
+                description:'Diverse add-on packs to embellish photo composites, graphic designs and paintings'
+            }
         ]
     },
 })

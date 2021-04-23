@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="it">
     <head>
-        <!-- Required meta tags -->
+        <title>painter</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="assets/master.css">
 
-        <title>painter</title>
+
     </head>
     <body>
         <div id="root">
@@ -148,23 +148,27 @@
                 </div>
             </header>
             <main>
-                <div class="container-fluid">
+                <div class="container">
                     <section class="cards">
                         <div class="row">
                             <div class="header-main col-12">
                                 <h2 class="mb-0">More painting possibilities</h2>
                             </div>
-                        </div>
 
+                            <!-- list card -->
+                            <card-list
+                                :cards = "cards">
+                            </card-list>
+                        </div>
+                    </section>
+
+                    <section class="cards2">
                         <div class="row">
-                            <div class="container">
-                                <div class="row">
-                                    <!-- list movie -->
-                                    <card-list
-                                        :cards = "cards">
-                                    </card-list>
-                                </div>
-                            </div>
+
+                            <!-- list card -->
+                            <card-list
+                                :cards = "cards">
+                            </card-list>
                         </div>
                     </section>
                 </div>
@@ -185,8 +189,6 @@
         <!-- Vuex -->
         <script src="https://unpkg.com/vuex@2.0.0"></script>
 
-        <!-- Promise IE -->
-        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
         <!-- Script js -->
         <script src="main.js"></script>
     </body>

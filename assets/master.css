@@ -133,32 +133,65 @@ main .header-main {
   margin-bottom: 2rem;
   text-align: center;
 }
-main #cardList {
+main section.cards #cardList {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
 }
-main #cardList .myCard {
+main section.cards #cardList .myCard {
   background-color: inherit;
   width: calc(100% / 3);
   padding: 0 15px;
   border: none;
 }
-main #cardList .myCard img {
+main section.cards #cardList .myCard img {
   width: 100%;
 }
-main #cardList .myCard .card-body {
+main section.cards #cardList .myCard .card-body {
   background-color: #ffffff;
   min-height: 180px;
 }
-main #cardList .myCard .card-body h5 {
+main section.cards #cardList .myCard .card-body h5 {
   margin-top: 0.8rem;
   margin-bottom: 0.8rem;
 }
-main #cardList .myCard .card-body p {
+main section.cards #cardList .myCard .card-body p {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+main section.cards2 {
+  margin-top: 50px;
+}
+main section.cards2 #cardList {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.cards2 #cardList .myCard {
+  display: flex;
+  flex-flow: row;
+  border: none;
+}
+main section.cards2 #cardList .myCard img {
+  width: 50%;
+}
+main section.cards2 #cardList .myCard .myCard-body {
+  width: 50%;
+  background-color: #ffffff;
+}
+main section.cards2 #cardList .myCard .myCard-body h5 {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+main section.cards2 #cardList .myCard .myCard-body p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+main section.cards2 #cardList .myCard:nth-child(odd) .myCard-body {
+  order: 0;
+}
+main section.cards2 #cardList .myCard:nth-child(odd) img {
+  order: 1;
 }
 
 .cont-jumbo {
