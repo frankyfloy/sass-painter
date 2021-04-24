@@ -270,6 +270,9 @@ main .header-main {
   margin-bottom: 2rem;
   text-align: center;
 }
+main .myCard .cont-img, main .myCard .card-body {
+  cursor: pointer;
+}
 main section.cards #cardList {
   display: flex;
   flex-wrap: wrap;
