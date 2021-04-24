@@ -103,14 +103,13 @@ main{
                 background-size: cover;
             }
 
+            // alternation of body card
             .myCard:nth-child(odd){
                 .myCard-body{
                     order: 0;
                 }
                 .cont-img{
-                    img{
-                        order: 1;
-                    }
+                    order: 1;
                 }
             }
         }
