@@ -358,7 +358,7 @@ main section.cards2 #cardList .myCard:first-child img {
 main section.cards2 #cardList .myCard:nth-child(odd) .myCard-body {
   order: 0;
 }
-main section.cards2 #cardList .myCard:nth-child(odd) .cont-img img {
+main section.cards2 #cardList .myCard:nth-child(odd) .cont-img {
   order: 1;
 }
 @media (max-width: 800px) {
